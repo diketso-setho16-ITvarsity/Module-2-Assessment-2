@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Shops</title>
+    </head>
+
+    <body>
+        <div class="nav">
+            <a href="../index.html">HOME</a>
+            <a href="../about/about.html">ABOUT US</a>
+            <a href="../map.html">MAP</a>
+        </div>
+        
+        <button class="tablink" onclick="openPage('electronics', this, 'red')">Electronics</button>
+        <button class="tablink" onclick="openPage('apparel', this, 'green')" id="defaultOpen">Apparel</button>
+        <button class="tablink" onclick="openPage('food', this, 'blue')">Food</button>
+        <button class="tablink" onclick="openPage('furniture', this, 'orange')">Furniture</button>
+
+        <div id="electronics" class="tabcontent">
+            <h3>Game</h3>
+            <p><img src="images/game.jpg"></p>
+
+            <h3>Cash Crusaders</h3>
+            <p><img src="images/cash.png"></p>
+
+            <h3>Cash Crusaders</h3>
+            <p><img src="images/incredible.jpg"></p>
+        </div>
+
+        <div id="apparel" class="tabcontent">
+            <h3>Nike</h3>
+            <p><img src="images/nike.jpg"></p>
+            
+            <h3>Jet</h3>
+            <p><img src="images/jet.jpg"></p>
+
+            <h3>Pep</h3>
+            <p><img src="images/pep.jpg"></p>
+        </div>
+
+        <div id="food" class="tabcontent">
+            <h3>Shoprite</h3>
+            <p><img src="images/shoprite.png"></p>
+
+            <h3>Checkers</h3>
+            <p><img src="images/checkers.png"></p>
+
+        </div>
+
+        <div id="furniture" class="tabcontent">
+            <h3>Lewis</h3>
+            <p><img src="images/lewis.png"></p>
+
+            <h3>Rochester</h3>
+            <p><img src="images/rochester.jpg"></p>
+        </div>
+
+        <script>
+            function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+        </script>
+
+    </body>
+</html>
