@@ -54,10 +54,10 @@ body, html {
     
   }
   
-  #electronics {background-color: red;}
-  #apparel {background-color: green;}
-  #food {background-color: blue;}
-  #furniture {background-color: orange;}
+  #electronics {background-color: rgb(224, 45, 45);}
+  #apparel {background-color: rgb(48, 134, 48);}
+  #food {background-color: rgb(101, 101, 224);}
+  #furniture {background-color: rgb(245, 193, 97);}
 
 img{
     width: 400px;
@@ -80,7 +80,7 @@ img{
 .tabs-bottom a{
   float: left;
   display: block;
-  width: 35%;
+  width: 33%;
   height: 35px;
   font-weight: 700;
   color: white;

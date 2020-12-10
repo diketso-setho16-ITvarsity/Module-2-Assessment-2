@@ -3,6 +3,7 @@ body{
   padding: 5px;
   text-align: center;
 }
+/*TOP NAV*/
 .nav{
   width: 100%;
   top: 0;
@@ -68,7 +69,7 @@ h1{
 .tabs-bottom a{
   float: left;
   display: block;
-  width: 50%;
+  width: 33%;
   height: 35px;
   font-weight: 700;
   color: white;
